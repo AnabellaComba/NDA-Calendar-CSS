@@ -3,6 +3,7 @@
 }
 
 body {
+  display: flex;
   font-family: 'Segoe UI', sans-serif;
   background-color: #f0f2f5;
   justify-content: center;
@@ -23,7 +24,8 @@ body {
 }
 
 .calendar-header {
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -52,7 +54,9 @@ body {
 
 .calendar-days,
 .calendar-grid {
+  display: grid;
   grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: auto;
   gap: 6px;
   text-align: center;
 }
